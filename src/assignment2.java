@@ -31,9 +31,17 @@ public class assignment2 {
              Scanner input = new Scanner(System.in);
              System.out.println("First Name?");
              f = input.nextLine();
+             while (!input.hasNext("[A-Za-z]+")){
+                 System.out.println("Try again");
+                 input.next();
+             }
              input.nextLine();
              System.out.println("Last Name?");
              l = input.nextLine();
+             while (!input.hasNext("[A-Za-z]+")){
+                 System.out.println("Try again");
+                 input.next();
+             }
              input.nextLine();
              System.out.println("PeopleSoft ID?");
              i = input.nextInt();
